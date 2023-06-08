@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOCAL</title>
+    <link rel="stylesheet" href="./scss/main.scss">
+    <script src="./index.js"></script>
+</head>
+<body>
+<section class="modal">
+    <form class="modal__form">
+        <button class="modal__form-close">X</button>
+        <h2 class="modal__form-title">Записаться</h2>
+        <div class="modal__form__input">
+            <label class="modal__form__input-label" for="name">Имя</label>
+            <input id="name" name='name' type="text">
+        </div>
+        <div class="modal__form__input">
+            <label class="modal__form__input-label" for="phone">Телефон</label>
+            <input id="phone" name='phone' type="tel">
+        </div>
+        <div class="modal__form__input">
+            <label class="modal__form__input-label" for="comment">Комментарий</label>
+            <textarea id="comment" name='comment' maxlength="100"></textarea>
+        </div>
+        <button type="submit" class="modal__form-button">Отправить</button>
+
+    </form>
+</section>
+<header class="header">
+    <div class="header__top">
+    <div class="header__top__burger">
+        <span class="header__top__burger-stick"></span>
+        <span class="header__top__burger-stick"></span>
+        <span class="header__top__burger-stick"></span>
+    </div>
+    <div class="header__top__contacts">
+        <div class="header__top__contacts__left">
+            <a href="#" class="header__top__contacts__left-logo"><img class="" alt="logo" src="assets/images/logo/logo-cyan.svg">
+            </a>
+</div>
+        <div class="header__top__contacts__addresses">
+            <address class="header__top__contacts__addresses__address">
+                <img class="header__top__contacts__addresses__address-icon" alt="декоративная иконка геометка" src="assets/images/UI/geo.svg">
+                <span class="header__top__contacts__addresses__address-top">Ростов-на-Дону</span>
+                <span class="header__top__contacts__addresses__address-bottom">ул. Ленина, 2Б</span>
+            </address>
+            <div class="header__top__contacts__addresses__phone">
+                <img class="header__top__contacts__addresses__phone-icon" src="assets/images/UI/whatsapp.svg" alt="whatsapp"><a href="tel:+78630000000">+7(863) 000 00 00</a></div>
+        </div>
+        <div class="header__top__contacts__right">
+
+            <button class="header__top__contacts__right-button">Записаться на прием</button>
+        </div>
+
+    </div>
+    </div>
+    <div class="header__bottom">
+    <nav class="header__bottom__nav">
+        <ul class="header__bottom__nav__list">
+            <li class="header__bottom__nav__list__item"><a href="#" class="header__bottom__nav__list__item-link">О клинике</a></li>
+            <li class="header__bottom__nav__list__item"><a href="#" class="header__bottom__nav__list__item-link">Услуги</a></li>
+            <li class="header__bottom__nav__list__item"><a href="#" class="header__bottom__nav__list__item-link">Специалисты</a></li>
+            <li class="header__bottom__nav__list__item"><a href="#" class="header__bottom__nav__list__item-link">Цены</a></li>
+            <li class="header__bottom__nav__list__item"><a href="#" class="header__bottom__nav__list__item-link">Контакты</a></li>
+
+        </ul>
+        <div class="header__bottom__nav-button">Записаться на прием</div>
+
+    </nav>
+    </div>
+</header>
+<section class="hero">
+    <img class="hero-img" src="./assets/images/hero/hero-small.png" srcset="./assets/images/hero/hero-small.png 375w, ./assets/images/hero/hero-big.png 950w" sizes="(min-width: 1200px) 950w" alt="Интерьер клиники">
+    <div class="hero__content">
+
+    <h1 class="hero__content-title">
+        Многопрофильная клиника для детей
+        и&nbsp;взрослых
+    </h1>
+        <p class="hero__content-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+    </div>
+</section>
+
+<section class="offers">
+    <ul class="offers__list">
+        <li class="offers__list__item offers__list__item--current">
+        <div class="offers__list__item-img" style="background-image: url('./assets/images/offers/offer-1-1200.png')"></div>
+        <h2 class="offers__list__item-title">
+            CHECK-UP
+            <span class="offers__list__item-title--small">для мужчин</span>
+        </h2>
+        <ul class="offers__list__item__dots">
+            <li class="offers__list__item__dots-item">Гормональный скрининг</li>
+            <li class="offers__list__item__dots-item">Тестостерон</li>
+            <li class="offers__list__item__dots-item">Свободный тестостерон</li>
+            <li class="offers__list__item__dots-item">Глобулин, связывающий половые гормоны</li>
+        </ul>
+        <div class="offers__list__item__pricing">
+            <span class="offers__list__item__pricing-value">Всего 2800₽<del class="offers__list__item__pricing-value--deleted">3800₽</del></span>
+
+        </div>
+        <div class="offers__item__buttons">
+            <button class="offers__list__item__buttons-button--cyan">Записаться</button>
+            <button class="offers__list__item__buttons-button--transparent">Подробнее</button>
+        </div>
+    </li>
+        <li class="offers__list__item offers__list__item--current">
+            <div class="offers__list__item-img" style="background-image: url('./assets/images/offers/offer-2-1200.jpg')"></div>
+            <h2 class="offers__list__item-title">
+                CHECK-UP
+                <span class="offers__list__item-title--small">для женщин</span>
+            </h2>
+            <ul class="offers__list__item__dots">
+                <li class="offers__list__item__dots-item">Гормональный скрининг</li>
+                <li class="offers__list__item__dots-item">Прогестерон</li>
+                <li class="offers__list__item__dots-item">ФСГ</li>
+                <li class="offers__list__item__dots-item">Пролактин</li>
+            </ul>
+            <div class="offers__list__item__pricing">
+                <span class="offers__list__item__pricing-value">Всего 3100₽<del class="offers__list__item__pricing-value--deleted">3900₽</del></span>
+
+            </div>
+            <div class="offers__item__buttons">
+                <button class="offers__list__item__buttons-button--cyan">Записаться</button>
+                <button class="offers__list__item__buttons-button--transparent">Подробнее</button>
+            </div>
+        </li>
+        <li class="offers__list__item offers__list__item--current">
+            <div class="offers__list__item-img" style="background-image: url('./assets/images/offers/offer-3-1200.jpg')"></div>
+            <h2 class="offers__list__item-title">
+                CHECK-UP
+                <span class="offers__list__item-title--small">для хороших мальчиков</span>
+            </h2>
+            <ul class="offers__list__item__dots">
+                <li class="offers__list__item__dots-item">Почесывание пузика</li>
+                <li class="offers__list__item__dots-item">Мячиковая терапия</li>
+                <li class="offers__list__item__dots-item">Трехразовые прогулки</li>
+                <li class="offers__list__item__dots-item">Вкусняшки</li>
+            </ul>
+            <div class="offers__list__item__pricing">
+                <span class="offers__list__item__pricing-value">0₽<del class="offers__list__item__pricing-value--deleted">3800₽</del></span>
+
+            </div>
+            <div class="offers__item__buttons">
+                <button class="offers__list__item__buttons-button--cyan">Записаться</button>
+                <button class="offers__list__item__buttons-button--transparent">Подробнее</button>
+            </div>
+        </li>
+    </ul>
+    <div class="offers__controller">
+        <button  class="offers__controller-button offers__controller-button--prev">
+            <svg width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32.6718 7.67186H4.54488L9.20421 3.03512C9.7241 2.51768 9.7261 1.67678 9.20866 1.15689C8.69122 0.636925 7.85025 0.635 7.33036 1.15237L0.390637 8.05861C0.390173 8.05901 0.389841 8.05947 0.389442 8.05987C-0.129124 8.57731 -0.130784 9.42093 0.389309 9.94009C0.389774 9.94049 0.390106 9.94095 0.390505 9.94135L7.33022 16.8476C7.85005 17.3649 8.69102 17.3631 9.20852 16.8431C9.72596 16.3232 9.72397 15.4823 9.20408 14.9648L4.54488 10.3281H32.6718C33.4053 10.3281 33.9999 9.7335 33.9999 8.99998C33.9999 8.26646 33.4053 7.67186 32.6718 7.67186Z" fill="#E1E1E1"/>
+        </svg>
+        </button>
+        <div class="offers__controller__pagination">
+            <!--   Количество слайдов определяется автоматически, первый слайд по умолчанию активен         -->
+            <span class="offers__controller__pagination-value offers__controller__pagination-value--current"></span>
+            <span class="offers__controller__pagination-value">/</span>
+            <span class="offers__controller__pagination-value offers__controller__pagination-value--total"></span>
+        </div>
+        <button  class="offers__controller-button offers__controller-button--next">
+            <svg width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.32822 7.67186H29.4551L24.7958 3.03512C24.2759 2.51768 24.2739 1.67678 24.7913 1.15689C25.3088 0.636925 26.1497 0.635 26.6696 1.15237L33.6094 8.05861C33.6098 8.05901 33.6102 8.05947 33.6106 8.05987C34.1291 8.57731 34.1308 9.42093 33.6107 9.94009C33.6102 9.94049 33.6099 9.94095 33.6095 9.94135L26.6698 16.8476C26.1499 17.3649 25.309 17.3631 24.7915 16.8431C24.274 16.3232 24.276 15.4823 24.7959 14.9648L29.4551 10.3281H1.32822C0.5947 10.3281 9.91821e-05 9.7335 9.91821e-05 8.99998C9.91821e-05 8.26646 0.5947 7.67186 1.32822 7.67186Z" fill="#E1E1E1"/>
+            </svg>
+
+        </button>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__content container">
+
+        <nav class="footer__content__nav">
+            <div class="footer__content__logo">
+                <img src="assets/images/logo/logo-white.svg" alt="logo">
+            </div>
+            <ul class="footer__content__nav__list">
+                <li class="footer__content__nav__list-item"><a href="#" class="header__nav-link">О клинике</a></li>
+                <li class="footer__content__nav__list-item"><a href="#" class="header__nav-link">Услуги</a></li>
+                <li class="footer__content__nav__list-item"><a href="#" class="header__nav-link">Специалисты</a></li>
+                <li class="footer__content__nav__list-item"><a href="#" class="header__nav-link">Цены</a></li>
+                <li class="footer__content__nav__list-item"><a href="#" class="header__nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="footer__content__social">
+            <li class="footer__content__social-item">
+                <a href="#" class="footer__content__social-link">
+                    <img src="assets/images/UI/instagram.svg" alt="instagram">
+                </a>
+            </li>
+            <li class="footer__content__social-item">
+                <a href="#" class="footer__content__social-link">
+                    <img src="assets/images/UI/whatsapp.svg" alt="whatsapp">
+                </a>
+            </li>
+            <li class="footer__content__social-item">
+                <a href="#" class="footer__content__social-link">
+                    <img src="assets/images/UI/telegram.svg" alt="telegram">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+</footer>
+</body>
+</html>
